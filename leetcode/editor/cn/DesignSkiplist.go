@@ -65,14 +65,15 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 const maxLevel = 32
 
 func main() {
-	//seed := time.Now().UnixNano()
-	//fmt.Println(seed)
-	rand.Seed(1658923842080965000)
+	seed := time.Now().UnixNano()
+	fmt.Println(seed)
+	rand.Seed(1658932193990310700)
 	Skiplist := Constructor()
 	Skiplist.Add(9)
 	Skiplist.Add(4)

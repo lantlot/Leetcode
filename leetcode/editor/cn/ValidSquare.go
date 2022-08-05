@@ -56,6 +56,10 @@ func validSquare(p1 []int, p2 []int, p3 []int, p4 []int) bool {
 	if len(kv) > 2 {
 		return false
 	}
+	s := "1234fff"
+	for i, c := range s {
+
+	}
 	f1, f2 := false, false
 	for k, v := range kv {
 		if k == 0 {
